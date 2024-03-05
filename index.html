@@ -94,6 +94,18 @@
     <link rel="icon" href="logo1.png" type="image/png">
 
 </head>
+    
+<script>
+    window.onload = function() {
+        var password = prompt("Please enter the password to view the content:");
+        var correctPassword = "1234567890";
+
+        if (password !== correctPassword) {
+            alert("Incorrect password. You don't have permission to view this page.");
+            window.location.href = "https://oanmediahub.github.io";
+        }
+    };
+</script>
 
 <body>
 
